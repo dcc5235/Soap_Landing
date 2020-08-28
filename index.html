@@ -5,12 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Seaweed+Script&display=swap" rel="stylesheet">
   <title>Sensitive Suds</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $(".toggle").on("click", function () {
+
+        if ($(".item").hasClass("active")) {
+          $(".item").removeClass("active");
+        }
+        else {
+          $(".item").addClass("active");
+        }
+      })
+    });
+  </script>
 </head>
 
 <body>
-  <header>
-    <div>
+  <!-- User Story #1: My product landing page should have a header element with a corresponding id="header". -->
+  <header id="header">
+    <nav>
+      <ul class="menu">
+        <li class="logo"><a href="#">Sensitive Suds 🌻</a></li>
+        <li class="item"><a href="#">Products</a></li>
+        <li class="item"><a href="#">The Psoriasis Project</a></li>
+        <li class="item"><a href="#">Latest Collection</a></li>
+        <li class="item"><a href="#">About</a></li>
+        <li class="item button"><a href="#">Login</a></li>
+        <li class="toggle "><span class="bars"></span></li>
+      </ul>
+    </nav>
+
+
+
+
+    <!-- <div>
       <img src="images/header1.jpg" alt="woman bathing">
     </div>
     <div>
@@ -18,9 +49,9 @@
       Sensitive Suds
       We teamed up with The Organic Company(trademark) to design a new little something special for you and your special
       someone. So trade in those heels for flats (or slippers)-- we're bringing date night to you!
-      Order Yours Today
+      Order Yours Today -->
     </div>
-    header
+
 
   </header>
 
@@ -37,9 +68,7 @@
 
 
 
-<!-- User Story #1: My product landing page should have a header element with a corresponding id="header".
-
-User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.
+<!-- User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.
 
 User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
 
