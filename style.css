@@ -2,7 +2,7 @@
 General Styling
 =========================================================== */
 body {
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 img {
@@ -13,38 +13,13 @@ img {
 Header: Navigation Bar 
 =========================================================== */
 
-nav {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  background: #222;
-  padding: 5px 20px;
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 .menu li {
-  font-size: 16px;
-  padding: 15px 5px;
+  padding: 0.5rem 1rem;
 }
 
-.menu li a {
+.menu li a,
+.nav-link.active {
   display: block;
-}
-
-.logo a {
-  font-size: 20px;
 }
 
 .button {
@@ -55,27 +30,24 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  padding-left: 0;
 }
 
 .toggle {
   order: 1;
 }
 
-.item.button {
+.nav-link.button {
   order: 2;
 }
 
-.item {
+.nav-link {
   width: 100%;
   text-align: center;
   order: 3;
   display: none;
 }
 
-.item.active {
-  display: block;
-}
 .toggle {
   cursor: pointer;
 }
@@ -106,16 +78,85 @@ a:hover {
   top: -5px;
 }
 
+nav {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: #222;
+  padding: 0.3rem 0.4rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* ===========================================================
-General Styling
+Header: Images / Text
+=========================================================== */
+
+#slider {
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slider figure img {
+  width: 20%;
+  float: left;
+  height: 15rem;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  -100% {
+    left: -400%;
+  }
+}
+
+/* ===========================================================
+Main
 =========================================================== */
 
 /* ===========================================================
-General Styling
-=========================================================== */
-
-/* ===========================================================
-General Styling
+Footer
 =========================================================== */
 
 /* ===========================================================
@@ -129,7 +170,7 @@ Media Query
   .logo {
     flex: 1;
   }
-  .item.button {
+  .nav-link.button {
     width: auto;
     order: 1;
     display: block;
@@ -155,7 +196,7 @@ Media Query
 }
 
 @media (min-width: 768px) {
-  .item {
+  .nav-link {
     display: block;
     width: auto;
   }
@@ -165,7 +206,7 @@ Media Query
   .logo {
     order: 0;
   }
-  .item {
+  .nav-link {
     order: 1;
   }
   .button {
