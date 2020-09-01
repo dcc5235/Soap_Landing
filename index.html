@@ -5,46 +5,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Seaweed+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
   <title>Sensitive Suds</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     $(function () {
       $(".toggle").on("click", function () {
 
-        if ($(".item").hasClass("active")) {
-          $(".item").removeClass("active");
+        if ($(".nav-link").hasClass("active")) {
+          $(".nav-link").removeClass("active");
         }
         else {
-          $(".item").addClass("active");
+          $(".nav-link").addClass("active");
         }
       })
-    });
+    })
   </script>
 </head>
 
 <body>
   <!-- User Story #1: My product landing page should have a header element with a corresponding id="header". -->
   <header id="header">
-    <nav>
+    <!-- User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar". -->
+    <nav id="nav-bar">
+      <!-- User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link. -->
       <ul class="menu">
-        <li class="logo"><a href="#">Sensitive Suds 🌻</a></li>
-        <li class="item"><a href="#">Products</a></li>
-        <li class="item"><a href="#">The Psoriasis Project</a></li>
-        <li class="item"><a href="#">Latest Collection</a></li>
-        <li class="item"><a href="#">About</a></li>
-        <li class="item button"><a href="#">Login</a></li>
-        <li class="toggle "><span class="bars"></span></li>
+        <li class="nav-link"><a href=" #">Products</a></li>
+        <li class="nav-link"><a href="#">The Psoriasis Project</a></li>
+        <li class="nav-link"><a href="#">Latest Collection</a></li>
+        <li class="nav-link"><a href="#">About</a></li>
+        <li class="nav-link button"><a href="#">Login</a></li>
+        <li class="toggle"><span class="bars"></span></li>
       </ul>
     </nav>
+    <!-- User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here. -->
+    <div id="slider">
+      <figure>
+        <img src="images/header2.jpg" alt="woman enjoying bath">
+        <img src="images/product3.jpg">
+        <img src="images/lavenderbar.jpg" alt="soap products on table">
+        <img src="images/project1.jpg">
+      </figure>
+    </div>
 
 
 
 
     <!-- <div>
-      <img src="images/header1.jpg" alt="woman bathing">
-    </div>
-    <div>
       Natural Handmade Soap to your Door
       Sensitive Suds
       We teamed up with The Organic Company(trademark) to design a new little something special for you and your special
@@ -68,11 +75,7 @@
 
 
 
-<!-- User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.
-
-User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
-
-User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link.
+<!-- 
 
 User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
 
