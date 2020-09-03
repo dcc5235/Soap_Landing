@@ -1,15 +1,154 @@
+/* ===========================================================
+General Styling
+=========================================================== */
+
 body,
 html {
   height: 100%;
   margin: 0;
+  padding: 0;
   font-family: "Ubuntu", sans-serif;
   line-height: 180%;
   color: #666666;
   text-align: center;
 }
 
+img {
+  width: 100%;
+}
+/* ===========================================================
+Header
+=========================================================== */
+
+#header-img {
+  position: fixed;
+}
+
+.header {
+  background-color: #ffffff;
+  color: #000000;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+.header ul a {
+  display: block;
+  padding: 0.2rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.header ul a:hover {
+  background-color: #f2f2f2;
+  color: #008080;
+}
+
+.header .logo {
+  display: block;
+  max-width: 5rem;
+  margin: 1rem 0 0 1rem;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  padding-left: 0;
+}
+
+.header .menu-icon {
+  padding: 3rem 2rem;
+  position: relative;
+  cursor: pointer;
+  float: right;
+}
+
+.header .menu-icon .nav-icon {
+  background: #000;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before {
+  background: #000;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 5px;
+  transition: background 0.2s ease-out;
+}
+
+.header .menu-icon .nav-icon:after {
+  background: #000;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  transition: background 0.2s ease-out;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.menu-icon ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.banner {
+  background-color: #323232;
+  color: #f2f2f2;
+  padding: 0.2rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.5rem #008080;
+  font-family: sans-serif;
+  animation-name: flashing;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 10s;
+}
+
+.banner h1 {
+  margin-bottom: 0;
+}
+
+.banner h4 {
+  margin: 0 0 1rem 0;
+}
+
+/* ===========================================================
+Main
+=========================================================== */
+
+/* ===========================================================
+Footer
+=========================================================== */
+
+/* ===========================================================
+Media Query
+=========================================================== */
 .parallax1 {
-  background: url(images/header2.jpg);
+  background: url(images/img1.jpg);
   min-height: 100%;
 }
 
@@ -131,6 +270,50 @@ img:hover {
   transition: 0.9s;
 }
 
-img {
-  width: 100%;
+/* media query */
+
+/* @media (max-height: 780px) {
+  .parallax1 {
+    background: url(images/header2.jpg);
+    min-height: 100%;
+  }
+} */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+/* ===========================================================
+Keyframes
+=========================================================== */
+
+@keyframes flashing {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
