@@ -184,7 +184,7 @@ Main
 }
 
 .heading {
-  font-size: 200%;
+  font-size: 2rem;
   top: 18%;
   letter-spacing: 8px;
 }
@@ -193,7 +193,7 @@ Main
 .two-col video,
 .dark p,
 form {
-  font-size: 70%;
+  font-size: 0.7rem;
   text-align: justify;
   line-height: 1.3rem;
   margin: 1rem 0 0 0;
@@ -203,7 +203,7 @@ form {
 .heading-sm {
   top: 45%;
   color: #ffffff;
-  font-size: 250%;
+  font-size: 2.5rem;
   letter-spacing: 5px;
 }
 
@@ -270,18 +270,18 @@ video {
 
 button {
   font-weight: 700;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   text-transform: uppercase;
   background-color: #008080;
   border-color: #008080;
-  border-width: 4px;
+  border-width: 0.2rem;
 }
 
 button:hover {
   background-color: #000;
   border-color: #000;
   color: #ffffff;
-  border-width: 4px;
+  border-width: 0.2rem;
 }
 
 input[type="submit"] {
@@ -291,7 +291,7 @@ input[type="submit"] {
   padding: 1rem;
   margin-bottom: 0.3rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.2rem;
   cursor: pointer;
 }
 
@@ -299,7 +299,7 @@ input[type="submit"] {
 Media Query
 =========================================================== */
 
-@media (min-width: 48em) {
+@media (min-width: 768px) {
   .parallax1,
   .parallax2,
   .parallax3,
@@ -308,7 +308,7 @@ Media Query
   }
 
   .heading {
-    font-size: 550%;
+    font-size: 6rem;
     top: 2%;
   }
 
@@ -317,7 +317,7 @@ Media Query
   }
 
   .header li a {
-    padding: 20px 30px;
+    padding: 1rem 1.5rem;
   }
 
   .header .menu {
@@ -344,7 +344,7 @@ Media Query
 
   .dark {
     overflow: auto;
-    padding: 50px 80px;
+    padding: 2.5rem 4rem;
     background-color: #323232;
     color: #f2f2f2;
   }
