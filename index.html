@@ -27,7 +27,7 @@
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#products">Products</a></li>
-        <li><a href="#projects">Latest Projects</a></li>
+        <li><a href="#questions">Questions</a></li>
       </ul>
     </nav>
   </header>
@@ -55,10 +55,11 @@
           sit. Repudiandae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quia odio possimus veniam
           sequi obcaecati pariatur, exercitationem, culpa reiciendis ullam rerum qui, voluptatum hic ipsam sint
           assumenda
-          totam eaque suscipit. Here's how it works!</p>
+          totam eaque suscipit.</p>
       </div>
       <!-- User Story #6: I can watch an embedded product video with id="video". -->
       <div class="two-col">
+        <p>Here's how it works!</p>
         <video controls>
           <source src="videos/vid1.mp4" type="video/mp4">
         </video>
@@ -80,10 +81,15 @@
         box.</p>
       <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!NEED TO CAP IMG WIDTH/HEIGHT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
       <div class="img-container">
-        <div class="product-img"><img src="images/product1.jpg"></div>
-        <div class="product-img"><img src="images/product2.jpg"></div>
-        <div class="product-img"><img src="images/product4.jpg"></div>
-        <div class="product-img"><img src="images/product5.jpg"></div>
+        <div class="product-img">
+          <p>Avocado Oil Moisturizing Bars</p><img src="images/product1.jpg" style="width:12em; height:18em;">
+        </div>
+        <div class="product-img">
+          <p>Himalayan Sea Salt Scrub</p><img src="images/product2.jpg" style="width:12em; height:18em;">
+        </div>
+        <div class="product-img">
+          <p>Lavender Root Essential Oils</p><img src="images/product4.jpg" style="width:12em; height:18em;">
+        </div>
       </div>
       <p>Eligendi excepturi eveniet assumenda
         animi, voluptatem aliquam repellendus a minus, deleniti recusandae dicta laborum aut odio delectus porro enim
@@ -93,12 +99,12 @@
     </section>
     <div class="parallax3">
     </div>
-    <section id="projects" class="dark">
+    <section id="questions" class="dark">
       <div>
         <h3>Designed by Nature</h3>
       </div>
       <div class="two-col">
-        <p>This isn't just a soap, it's a moisturizer; perfect for
+        <p>These aren't just soap products; they're nourishing moisturizers; perfect for
           sensitive skin, psoriasis, and eczema. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
           repudiandae qui est minima aut ratione, vitae
           doloremque voluptates at, temporibus ipsam? Blanditiis mollitia facilis natus harum vitae consequuntur.
@@ -109,19 +115,20 @@
       <!-- User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
         User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
         User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address. -->
-      <div class="form-container">
+      <section class="form-container">
         <p>Have questions before you sign up? Let us know down below!</p>
         <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!NEED TO CENTER AND MAKE 100% WIDTH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
         <form>
-          <div class="form-text"><input id="name" type="text" name="name" placeholder="Enter your name" required>
+          <div class="form-box"><input id="name" type="text" name="name" placeholder="Enter your name" required>
           </div>
-          <div><input id="email" type="text" name="email" placeholder="Enter your email" required></div>
-          <div><textarea name="comment" placeholder="Enter your comment here"></textarea></div>
+          <div class="form-box"><input id="email" type="text" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-box"><textarea name="comment" placeholder="Enter your comment here"></textarea></div>
           <!-- User Story #11: Within the form, there is a submit input with a corresponding id="submit". -->
           <!-- User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit). -->
-          <div><input id="submit" type="submit" value="Submit"></div>
+          <div class="form-box"><input id="submit" type="submit" value="Submit"></div>
         </form>
-      </div>
+      </section>
       </div>
     </section>
     <div class="parallax4">
