@@ -144,7 +144,6 @@ Main
 .parallax1 {
   background: url(images/img1.jpg);
   min-height: 100%;
-  padding-top: 30rem;
 }
 
 .parallax2 {
@@ -172,45 +171,104 @@ Main
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  padding-top: 30rem;
 }
 
-.heading {
+.heading,
+.heading-sm {
   position: absolute;
   color: #ffffff;
-  font-size: 200%;
-  top: 18%;
   width: 100%;
   text-transform: uppercase;
-  letter-spacing: 8px;
   text-shadow: 0 0 10px #000;
 }
 
+.heading {
+  font-size: 200%;
+  top: 18%;
+  letter-spacing: 8px;
+}
+
 .two-col p,
-.two-col video {
+.two-col video,
+.dark p,
+form {
   font-size: 70%;
   text-align: justify;
   line-height: 1.3rem;
   margin-top: 1rem;
+  width: 100%;
+}
+
+.heading-sm {
+  top: 45%;
+  color: #ffffff;
+  font-size: 250%;
+  letter-spacing: 5px;
+}
+
+.dark {
+  overflow: auto;
+  background-color: #323232;
+  color: #f2f2f2;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img img {
+  margin: 0.5rem 0;
+  transition: all 1s;
+  object-fit: contain;
+  overflow-x: scroll;
+}
+
+img:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
 }
 
 section {
   overflow: auto;
   padding: 1rem 2rem;
+  margin-bottom: 0;
 }
 
 video {
   width: 100%;
 }
 
-/* ===========================================================
-Footer
-=========================================================== */
+button {
+  font-weight: 700;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background-color: #008080;
+  border-color: #008080;
+}
+
+button:hover {
+  background-color: #000;
+  border-color: #000;
+  color: #ffffff;
+  border-width: 4px;
+}
 
 /* ===========================================================
 Media Query
 =========================================================== */
 
 @media (min-width: 48em) {
+  .parallax1,
+  .parallax2,
+  .parallax3,
+  .parallax4 {
+    padding-top: 50rem;
+  }
   .heading {
     font-size: 550%;
     top: 2%;
@@ -240,6 +298,13 @@ Media Query
   .two-col p {
     font-size: 100%;
     line-height: 1.5rem;
+  }
+
+  .dark {
+    overflow: auto;
+    padding: 50px 80px;
+    background-color: #323232;
+    color: #f2f2f2;
   }
   nav,
   body {
