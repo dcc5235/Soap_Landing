@@ -1,5 +1,6 @@
 # Natural Suds Landing Page ![GitHub version doc](https://img.shields.io/badge/Version-1.0.0-red) ![GitHub last commit](https://img.shields.io/github/last-commit/dcc5235/sensitive_suds_landing_page?style=flat-square) 
 
+### Checkout the Live Version of the [Project](https://dcc5235.github.io/Soap_Landing/)!
 
 **HTML5, CSS3**
 
